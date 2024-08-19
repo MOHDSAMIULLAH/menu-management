@@ -77,26 +77,26 @@ The server will start on `http://localhost:5000`.
 - **Get All Categories**: `GET /api/categories`
 - **Get Category by ID**: `GET /api/categories/:id`
 - **Update Category**: `PUT /api/categories/:id`
-- **Delete Category**: `DELETE /api/categories/:id`
+
 
 ### Subcategories
 
-- **Create Subcategory**: `POST /api/categories/:categoryId/subcategories`
+- **Create Subcategory**: `POST /api/subcategories/:categoryId`
 - **Get All Subcategories**: `GET /api/subcategories`
 - **Get Subcategories under a Category**: `GET /api/categories/:categoryId/subcategories`
-- **Get Subcategory by ID**: `GET /api/subcategories/:id`
+- **Get Subcategory by ID**: `GET /api/subcategories/:subcategoryId`
 - **Update Subcategory**: `PUT /api/subcategories/:id`
-- **Delete Subcategory**: `DELETE /api/subcategories/:id`
+
 
 ### Items
 
-- **Create Item**: `POST /api/subcategories/:subcategoryId/items`
+- **Create Item**: `POST /api/items`
 - **Get All Items**: `GET /api/items`
-- **Get Items under a Category**: `GET /api/categories/:categoryId/items`
-- **Get Items under a Subcategory**: `GET /api/subcategories/:subcategoryId/items`
+- **Get Items under a Category**: `GET /api/items/category/:categoryId/items`
+- **Get Items under a Subcategory**: `GET /api/items/subcategory/:subCategoryId`
 - **Get Item by ID**: `GET /api/items/:id`
 - **Update Item**: `PUT /api/items/:id`
-- **Delete Item**: `DELETE /api/items/:id`
+
 
 ### Search
 
