@@ -18,6 +18,9 @@ app.use('/api/categories', categoryRoutes);
 app.use('/api/subcategories', subCategoryRoutes);
 app.use('/api/items', itemRoutes);
 
+app.get('/',(req,res)=>{
+  res.send('API is running...');
+})
 // Database Connection
 mongoose.connect(process.env.MONGO_URI,)
   .then(() => console.log('MongoDB connected'))
